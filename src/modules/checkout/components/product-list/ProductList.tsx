@@ -1,12 +1,12 @@
 import React from 'react';
 import './ProductList.scss';
 import { Product } from '../product/Product';
-import { PRODUCTS } from '../../constants/products';
+import { Products } from '../../constants/Products';
 
 export function ProductList() {
   return (
     <div className={'content-products'}>
-      {PRODUCTS.map((product) => {
+      {Products.map((product) => {
         return (
           <Product
             amount={product.amount}
