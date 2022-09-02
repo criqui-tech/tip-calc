@@ -1,0 +1,9 @@
+.content-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 25px;
+
+  .box-product {
+    width: 46%;
+  }
+}

@@ -1,0 +1,46 @@
+@import '../../../../styles/vars';
+
+.box-product {
+  display: flex;
+  border: 1px solid $gray-40;
+  width: 100%;
+  border-radius: 6px;
+
+  .image-product {
+    width: 50%;
+    display: flex;
+
+    img {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .description-product {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h3 {
+      font-size: 23px;
+      margin: 0;
+      padding: 0;
+      color: $gray_dark;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .currency {
+      font-family: 'Maven Pro', sans-serif;
+      margin-top: 6px;
+      font-weight: 700;
+      color: $brand_color;
+      font-size: 22px;
+    }
+  }
+}

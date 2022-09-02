@@ -1,0 +1,34 @@
+/* Utilities */
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+.shadow-1 {
+  box-shadow: 1px 1px 8px 2px #ccc;
+}
+
+.shadow-2 {
+  box-shadow: 1px 1px 16px 2px #ccc;
+}
+
+.shadow-3 {
+  box-shadow: 1px 1px 24px 2px #ccc;
+}
+
+// Responsive
+@mixin all-mobile {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media only screen and (max-width: 700px) {
+    @content;
+  }
+}

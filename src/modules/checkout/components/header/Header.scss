@@ -1,0 +1,11 @@
+@import '../../../../styles/vars';
+
+header {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid $gray-40;
+
+  img {
+    max-width: 200px;
+  }
+}

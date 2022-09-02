@@ -1,0 +1,10 @@
+@import '../../../../styles/vars';
+
+aside {
+  position: fixed;
+  width: 30vw;
+  height: 100vh;
+  background-color: $gray-40;
+  top: 0;
+  right: 0;
+}
