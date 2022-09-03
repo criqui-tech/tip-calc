@@ -24,7 +24,7 @@
 
   &.lg {
     font-size: 22px;
-    padding: 12px 22px;
+    padding: 18px 22px;
   }
 
   &.brand-primary {
@@ -44,6 +44,22 @@
 
     &:hover {
       background-color: $brand_contrast;
+      @include transition(all 0.5s ease-in-out);
+    }
+  }
+
+  &.with-input {
+    border-radius: 0 6px 6px 0;
+  }
+
+  &.is-disabled {
+    background-color: $gray-60;
+    border-color: $gray-80;
+    color: $gray-80;
+
+    &:hover {
+      background-color: $gray-10;
+      cursor: not-allowed;
       @include transition(all 0.5s ease-in-out);
     }
   }

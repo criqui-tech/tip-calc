@@ -1,6 +1,6 @@
 import { IProduct } from '../components/product/IProduct';
 
-export const Products: Array<IProduct> = [
+export const PRODUCTS: Array<IProduct> = [
   {
     id: 1,
     cover: 'https://res.cloudinary.com/cristianqr22/image/upload/v1662069715/app-foods/burguer.jpg',

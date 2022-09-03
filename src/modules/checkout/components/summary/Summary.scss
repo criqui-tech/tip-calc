@@ -7,4 +7,30 @@ aside {
   background-color: $gray-40;
   top: 0;
   right: 0;
+  z-index: 2;
+}
+
+.action-container-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30vw;
+}
+
+
+.container-summary {
+  padding: 30px;
+  min-height: 80%;
+
+  &.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+.sections-summary {
+  margin-bottom: 120px;
 }

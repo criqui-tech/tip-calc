@@ -1,0 +1,19 @@
+@import '../../../../styles/vars';
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray-60;
+  }
+}
+
+.invoice-title {
+  font-weight: 400;
+}

@@ -1,0 +1,11 @@
+@import '../../../../styles/vars';
+
+.top-navbar {
+  height: 89px;
+  border-bottom: 1px solid $gray-60;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}

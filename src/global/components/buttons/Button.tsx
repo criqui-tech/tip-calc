@@ -12,6 +12,7 @@ export function Button(props: IButton) {
                     ${props.type || ButtonColorTypes.PRIMARY} 
                     ${props.size || ButtonSizeTypes.MD}
                     ${props.isBlock ? 'block' : ''}
+                    ${props.isDisabled ? 'is-disabled' : ''}
             `}>
       {props.children}
     </button>

@@ -6,4 +6,5 @@ export interface IButton {
   size: ButtonSizeTypes;
   isBlock?: boolean;
   callBack: any;
+  isDisabled?: boolean;
 }
