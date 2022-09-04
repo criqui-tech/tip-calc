@@ -3,18 +3,20 @@ name: Run tests
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ main ]
+    types: [ opened, synchronize ]
 
 jobs:
   deploy:
     environment:
       name: Run tests
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Install and Build 🔧
+      - name: Install and run tests 🔧
         run: |
           npm ci
           npm run build
