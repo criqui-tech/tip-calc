@@ -1,0 +1,21 @@
+
+.scrollbar-custom-gray::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+
+/**  STYLE 4 */
+.scrollbar-custom-gray::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(125, 125, 125, 0.1);
+  background-color: #dedede;
+  border-radius: 5px;
+}
+
+.scrollbar-custom-gray::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border: 2px solid #adadad;
+  border-radius: 5px;
+}
+

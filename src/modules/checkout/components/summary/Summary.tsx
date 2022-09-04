@@ -1,43 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Summary.scss';
 import { UserNavBar } from '../user-nav-bar/UserNavBar';
 import { Button } from '../../../../global/components/buttons/Button';
 import {
-  ButtonColorTypes,
-  ButtonSizeTypes
-} from '../../../../global/components/buttons/ButtonTypes';
+  ButtonSizeTypes,
+  ButtonTemplateTypes,
+  ButtonType
+} from '../../../../global/components/buttons/ButtonTemplateTypes';
 import { EmptyData } from '../empty-data/EmptyData';
 import { SummaryItem } from '../summary-item/SummaryItem';
-import { PRODUCTS } from '../../constants/Products';
-import { IProduct } from '../product/IProduct';
 import { Invoice } from '../invoice/Invoice';
 import { CouponForm } from '../cupon-form/CouponForm';
+import { useAppDispatch, useAppSelector } from '../../../../global/hooks/StoreHook';
+import { calculateInvoice } from '../../../../global/features/summary/InvoiceSlice';
 
 export function Summary() {
   const onClickCustomButton = () => {
     console.log('clicked');
   };
 
-  const productSelectList: Array<IProduct> = PRODUCTS.filter(
-    (item) => item.id === 3 || item.id === 7
-  );
+  const dispatch = useAppDispatch();
+  const productSelectList = useAppSelector((state) => state.cart);
+  const globalInvoice = useAppSelector((state) => state.invoice);
+  useEffect(() => {
+    console.log('init', productSelectList);
+    dispatch(
+      calculateInvoice({
+        tip: globalInvoice.baseTipPercentage || 0,
+        items: productSelectList
+      })
+    );
+  });
+
   return (
     <aside>
       <UserNavBar />
       {productSelectList && productSelectList.length > 0 ? (
         <div>
-          <div className={'container-summary'}>
-            <h3 className={'sub-title'}>Mi orden</h3>
-            <div className={'summary-items sections-summary '}>
+          <div>
+            <h3 className={'top-title'}>Mi orden</h3>
+            <div className={'summary-items scrollbar-custom-gray sections-summary '}>
               {productSelectList.map((product) => {
-                return (
-                  <SummaryItem
-                    key={product.id}
-                    name={product.name}
-                    cover={product.cover}
-                    amount={product.amount || 0}
-                  />
-                );
+                return <SummaryItem key={product.id} product={product} />;
               })}
             </div>
             <div className={'redeem-coupon sections-summary '}>
@@ -50,7 +54,8 @@ export function Summary() {
 
           <div className={'action-container-button'}>
             <Button
-              type={ButtonColorTypes.FLAT_PRIMARY}
+              type={ButtonType.BUTTON}
+              template={ButtonTemplateTypes.FLAT_PRIMARY}
               size={ButtonSizeTypes.LG}
               isBlock={true}
               callBack={onClickCustomButton}>
