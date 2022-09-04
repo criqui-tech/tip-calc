@@ -1,10 +1,11 @@
-import { ButtonColorTypes, ButtonSizeTypes } from './ButtonTypes';
+import { ButtonSizeTypes, ButtonTemplateTypes, ButtonType } from './ButtonTemplateTypes';
 
 export interface IButton {
   children?: any;
-  type: ButtonColorTypes;
+  type: ButtonType;
+  template: ButtonTemplateTypes;
   size: ButtonSizeTypes;
   isBlock?: boolean;
-  callBack: any;
+  callBack?: any;
   isDisabled?: boolean;
 }

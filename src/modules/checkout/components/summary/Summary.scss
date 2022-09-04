@@ -20,7 +20,6 @@ aside {
 
 .container-summary {
   padding: 30px;
-  min-height: 80%;
 
   &.vertical-flex {
     display: flex;
@@ -32,5 +31,19 @@ aside {
 
 
 .sections-summary {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+.summary-items {
+  max-height: 400px;
+  padding: 10px 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.top-title {
+  padding: 30px;
+  font-size: 22px;
+  color: #333;
 }

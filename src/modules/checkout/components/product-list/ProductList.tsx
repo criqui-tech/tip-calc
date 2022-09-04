@@ -8,18 +8,7 @@ export function ProductList() {
   return (
     <div className={'content-products'}>
       {products.map((product) => {
-        return (
-          <Product
-            key={product.id}
-            id={product.id}
-            amount={product.amount}
-            cost={product.amount}
-            cover={product.cover}
-            description={product.description}
-            isAddToCheckout={product.isAddToCheckout}
-            name={product.name}
-          />
-        );
+        return <Product key={product.id} product={product} />;
       })}
     </div>
   );
