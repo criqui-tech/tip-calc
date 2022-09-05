@@ -1,5 +1,3 @@
-# Tip-calc  app
-
 ![enter image description here](https://res.cloudinary.com/cristianqr22/image/upload/v1662381609/app-foods/logo_1_2x.png)  
 App version `0.1.5` is a web application that is responsible for calculating the tip of a shopping cart given the list
 of some products
