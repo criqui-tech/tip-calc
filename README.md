@@ -58,6 +58,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 For the continuous integration of the project, github actios was implemented, which allows jobs to be run in the
 project's pull request flow to validate syntax, and for unit tests to pass correctly
+
 ![img.png](img.png)
 
 **This is set to:**
