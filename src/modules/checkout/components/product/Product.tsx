@@ -56,7 +56,7 @@ export function Product(props: PropsWithRef<{ product: IProduct }>) {
             country={CountryEnum.CO}
             isCents={true}
             lang={LanguagesEnum.EN}
-            minimumFractionDigits={0}
+            minimumFractionDigits={2}
           />
         </span>
         <p>{product.description}</p>

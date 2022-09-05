@@ -41,7 +41,7 @@ export function SummaryItem(props: PropsWithRef<{ product: ISummaryItem }>) {
             country={CountryEnum.CO}
             isCents={true}
             lang={LanguagesEnum.EN}
-            minimumFractionDigits={0}
+            minimumFractionDigits={2}
           />
         </span>
         <img onClick={removeItem} className={'icon-remove'} src={removeIcon} alt={'icon remove'} />

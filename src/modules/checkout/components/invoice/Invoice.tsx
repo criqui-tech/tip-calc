@@ -19,7 +19,7 @@ export function Invoice() {
             lang={LanguagesEnum.EN}
             country={CountryEnum.CO}
             currency={CurrencyEnum.COP}
-            minimumFractionDigits={0}
+            minimumFractionDigits={2}
             isCents={true}
           />
         </p>
@@ -32,7 +32,7 @@ export function Invoice() {
             lang={LanguagesEnum.EN}
             country={CountryEnum.CO}
             currency={CurrencyEnum.COP}
-            minimumFractionDigits={0}
+            minimumFractionDigits={2}
             isCents={true}
           />
         </p>
@@ -48,7 +48,7 @@ export function Invoice() {
               lang={LanguagesEnum.EN}
               country={CountryEnum.CO}
               currency={CurrencyEnum.COP}
-              minimumFractionDigits={0}
+              minimumFractionDigits={2}
               isCents={true}
             />
           </strong>

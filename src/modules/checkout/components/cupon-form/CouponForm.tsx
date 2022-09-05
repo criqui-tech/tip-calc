@@ -33,7 +33,7 @@ export function CouponForm() {
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmitForm)}>
-        <h3 className={'sub-title'}>Propina</h3>
+        <h3 className={'sub-title'}>Porcentaje de propina %</h3>
         <div className={'container-coupon'}>
           <div className={'input-context'}>
             <input
