@@ -62,3 +62,11 @@ project's pull request flow to validate syntax, and for unit tests to pass corre
 **This is set to:**
 
 `.github/workflows/tests.yml`
+
+## Improvements
+
+- Implement views for mobile
+- Add to the github pipeline job the automatic deployment in vercel
+- Complete the purchase action
+- Get products from an api
+- Increase the coverage of tests to the project
