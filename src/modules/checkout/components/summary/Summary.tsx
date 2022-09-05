@@ -40,9 +40,11 @@ export function Summary() {
           <div>
             <h3 className={'top-title'}>Mi orden</h3>
             <div className={'summary-items scrollbar-custom-gray sections-summary '}>
-              {productSelectList.map((product) => {
-                return <SummaryItem key={product.id} product={product} />;
-              })}
+              <div>
+                {productSelectList.map((product) => {
+                  return <SummaryItem key={product.id} product={product} />;
+                })}
+              </div>
             </div>
             <div className={'redeem-coupon sections-summary '}>
               <CouponForm />

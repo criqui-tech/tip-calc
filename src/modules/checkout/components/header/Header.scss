@@ -1,9 +1,16 @@
 @import '../../../../styles/vars';
+@import '../../../../styles/utilities';
 
 header {
   background-color: white;
   padding: 20px;
   border-bottom: 1px solid $gray-40;
+  @include all-mobile() {
+    padding: 10px;
+    img {
+      max-width: 130px;
+    }
+  }
 
   img {
     max-width: 200px;

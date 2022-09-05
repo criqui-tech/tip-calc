@@ -5,6 +5,10 @@
 .content-layout {
   width: 70vw;
   padding: 30px;
+  @include all-mobile() {
+    width: 85%;
+    padding-top: 360px;
+  }
 }
 
 
