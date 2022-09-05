@@ -1,9 +1,17 @@
+@import '../../../../styles/utilities';
+
 .content-products {
   display: flex;
   flex-wrap: wrap;
   gap: 25px 25px;
+  @include all-mobile() {
+    flex-direction: column;
+  }
 
   .box-product {
     width: 46%;
+    @include all-mobile() {
+      width: 100%;
+    }
   }
 }

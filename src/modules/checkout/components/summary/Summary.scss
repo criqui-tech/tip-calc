@@ -1,4 +1,5 @@
 @import '../../../../styles/vars';
+@import '../../../../styles/utilities';
 
 aside {
   position: fixed;
@@ -8,6 +9,11 @@ aside {
   top: 0;
   right: 0;
   z-index: 2;
+  @include all-mobile() {
+    width: 100%;
+    top: 71px;
+    height: 300px;
+  }
 }
 
 .action-container-button {
